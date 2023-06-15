@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 const calculateTimeDifference = (server: Date, client: Date) => {
   const difference = Math.abs(server.getTime() - client.getTime());
   return formatDistanceToNow(difference, { includeSeconds: true });
+  /** get the server time and calculate the difference */
 };
 
 
